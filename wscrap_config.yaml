@@ -1,0 +1,14 @@
+news_sites:
+  eluniversal:
+    url: http://www.eluniversal.com.mx
+    queries:
+      homepage_article_links: '.field-content a'
+      #aquí indicamos que el contenido del campo debe empezar por "a", luego en Python indicaremos que debe tener el atributo "href"
+      article_body: '.field-name-body'
+      article_title: '.pane-content h1'
+  elpais:
+    url: https://elpais.com
+    queries:
+      homepage_article_links: ''
+      article_body: ''
+      article_title: ''
