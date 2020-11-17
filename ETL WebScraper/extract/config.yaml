@@ -1,0 +1,22 @@
+#yaml son archivos similares a los documento .json pero sin tanto ruido visual
+#se manejan árboles de información donde se tienen llaves y sub-llaves con todo tipo de información
+news_sites:
+  eluniversal:
+    url: http://www.eluniversal.com.mx
+    queries: #todas las consultas
+      homepage_article_links: '.field-content a' #en el contenido del campo tiene a
+      article_body: '.field-name-body' #querie: obtiene el body de la clase field-name-body
+      article_title: '.pane-content h1' #seleccionamos el primer elemento h1
+  elpais:
+    url: https://elpais.com
+    queries:
+      homepage_article_links: '.articulo-titulo a'
+      article_body: '.articulo-cuerpo'
+      article_title: '.articulo-titulo' 
+  washingtonpost:
+    url: https://www.washingtonpost.com
+    queries:
+      homepage_article_links: '.headline a'
+      article_body: '.topper-headline h1'
+      article_title: 'article.paywall'
+
